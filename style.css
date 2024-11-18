@@ -1,0 +1,137 @@
+/* import styling */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+/* body */
+
+/* Profile section */
+.profile-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* profile card */
+.profile-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* profile card h2  */
+.profile-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* profile img */
+.profile-image img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin: 0 auto 20px;
+}
+
+/* profile info */
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* info item */
+.info-item {
+  text-align: center;
+}
+
+.info-item span {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* profile desc */
+.profile-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+
+.profile-desc p {
+  font-size: 10px;
+  font-family: "Roboto", serif;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* container box untuk meratakan posisi img secara horizontal */
+.desc-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* desc img */
+.desc-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* desc box */
+.desc-box {
+  width: 120px;
+  height: 80px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* bagian hover */
+.profile-info .info-item span,
+.profile-info .info-item p,
+.profile-desc p {
+  color: #333;
+  transition: color 0.3 ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  background-color: #3c659a;
+  color: #fff;
+}
+
+/* hover */
+.profile-card:hover h2,
+.profile-card:hover .info-item span,
+.profile-card:hover .info-item p,
+.profile-card:hover .profile-desc p {
+  color: #fff;
+  cursor: pointer;
+}
